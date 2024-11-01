@@ -47,15 +47,16 @@ The features listed below correspond to the clean versions of the datasets.
 
 ### Summary
 
-Fill in...
+For the users data, our models **did not** yield useful insights and produced low silhouette scores due to the nature of the dataset. We can see a lack of clear patterns or natural groups within the user data. As we can see from our EDA, the variables are highly dispersed and lack significant correlations which makes it very difficult for clustering algorithms like KMeans and DBSCAN to identify distinct clusters.
 
+For the stocks data, however, our models were able to perform better and identify clear clusters that would allow for the strategic grouping of stocks to build portfolios based on risk. Further tuning of hyper parameters is needed, though, to see if the clustering can be optimized.
 
 ---
 
 ### Recommendation
 
-* bullet 1
-* bullet 2
+* Users: gather different data that's more representative of the population at large in order to allow for distinct clusters to form.  Based on that, identify investor profiles as a function of risk.
+* Stocks: Further optimize how the portfolios are built and use a **Streamlit** application as interface for users to input their investment goals and based on that recommend the correct stock portfolio to invest in.
 
 ---
 
